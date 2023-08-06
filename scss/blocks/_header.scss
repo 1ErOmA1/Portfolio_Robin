@@ -1,0 +1,233 @@
+.header__background{
+    background: $level1;
+    width: 900px;
+    height: 900px;
+    position: absolute; 
+    right: 0;
+    z-index: -1;
+}
+
+.header__top-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top-row-modile{
+    body{
+        overflow-y: hidden;
+    }
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $base;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 60px;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    .header__nav{
+        display: block;
+    }
+
+    .nav__list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .hamburger-menu{
+        position: fixed;
+        top: 0px;
+        right: 15px;
+    }
+}
+
+.header__bottom{
+    padding: 80px 40px 84px 0px;
+    align-items: center;
+}
+
+.header__text {
+    position: relative;
+}
+
+.header__text-group-main {
+    position: absolute;
+    left: 662px;
+    top: 160px;
+}
+
+.header__text-group1 {
+    font-size: 78px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__text-group2 {
+    color: $light_grey;
+    font-size: 78px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 150%;
+    position: absolute;
+    left: 662px;
+    top: 467px;
+}
+
+.hamburger-menu{
+    display: none !important;
+}
+
+@media screen and (max-width: 1440px) {
+    .header__text-group1 {
+        font-size: 60px;
+    }
+    
+    .header__text-group2 {
+        font-size: 60px;
+    }
+    .header__text-group-main {
+        left: 562px;
+    }
+    .header__img img{
+        width: 650px;
+        height: 550px;
+    }
+    .subtitle {
+        left: 562px;
+        top: 397px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header__background{
+        width: 500px;
+        height: 800px;
+    }
+    .header__text-group1 {
+        font-size: 50px;
+    }
+    
+    .header__text-group2 {
+        font-size: 50px;
+    }
+    .header__text-group-main {
+        left: 450px;
+    }
+    .header__img img{
+        width: 650px;
+        height: 550px;
+    }
+    .subtitle {
+        left: 450px;
+        top: 367px;
+    }
+    .header{
+        max-height: 800px;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .header__background{
+        width: 0px;
+        height: 0px;
+    }
+    .header__text-group1 {
+        font-size: 40px;
+    }
+    .header__text-group2 {
+        font-size: 40px;
+    }
+    .header__text-group-main {
+        left: 350px;
+        top: 60px;
+    }
+    .header__img img{
+        width: 500px;
+        height: 400px;
+    }
+    .subtitle {
+        left: 350px;
+        top: 247px;
+    }
+    .header{
+        max-height: 800px;
+        height: 600px;
+    }
+    .hamburger-menu{
+        display: block !important;
+        padding: 32px 24px;
+    }
+    .header__nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__text-group1 {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header__text-group2 {
+        font-size: 30px;
+    }
+    .header__text-group-main {
+        left: 150px;
+        top: 320px;
+    }
+    .header__img img{
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .subtitle {
+        font-size: 14px;
+        left: 150px;
+        top: 450px;
+        width: 280px;
+    }
+    .header__bottom{
+        padding: 30px 0px 0px 0px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header__text-group-main {
+        left: 10px;
+        top: 280px;
+    }
+    .header__img img{
+        width: 320px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .subtitle {
+        font-size: 14px;
+        left: 10px;
+        top: 410px;
+        width: 280px;
+    }
+    .header{
+        max-height: 800px;
+    }
+    .header__bottom{
+        padding: 20px 0px 0px 0px;
+    }
+}
+

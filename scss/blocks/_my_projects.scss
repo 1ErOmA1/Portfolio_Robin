@@ -1,0 +1,349 @@
+.my__projects {
+  margin-bottom: 150px;
+  height: 2050px;
+}
+
+.my__projects-container {
+  position: relative;
+}
+
+.my-projects__title {
+  color: $light_grey;
+  text-align: left;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.my-projects__subtitle {
+  text-align: left;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  top: 152px;
+  width: 572px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.my__projects-main-text {
+  color: $text;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.my__projects-text {
+  color: $light_grey;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+  width: 572px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.my__projects-1-img {
+  width: 636px;
+  height: 620px;
+  position: absolute;
+  left: 660px;
+  top: 120px;
+}
+
+.my__projects-1-text {
+  background: $level1;
+  padding: 40px 32px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 660px;
+  top: 740px;
+  overflow: hidden;
+}
+
+.my__projects-2 {
+  width: 636px;
+  height: 830px;
+  position: absolute;
+  top: 364px;
+}
+.my__projects-2-img {
+  width: 636px;
+  height: 620px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.my__projects-2-text {
+  background: $level1;
+  padding: 40px 32px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 620px;
+  overflow: hidden;
+}
+
+.my__projects-3 {
+  position: absolute;
+  inset: 0;
+}
+
+.my__projects-3-img {
+  width: 636px;
+  height: 620px;
+  position: absolute;
+  left: 660px;
+  top: 974px;
+}
+.my__projects-3-text {
+  background: $level1;
+  padding: 40px 32px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 660px;
+  top: 1594px;
+  overflow: hidden;
+}
+
+.my__projects-4 {
+  position: absolute;
+  inset: 0;
+}
+.my__projects-4-img {
+  width: 636px;
+  height: 620px;
+  position: absolute;
+  top: 1218px;
+}
+.my__projects-4-text {
+  background: $level1;
+  padding: 40px 32px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 1838px;
+  overflow: hidden;
+}
+
+.my__projects-button {
+  border-style: solid;
+  border-color: var(--purple, #5221e6);
+  border-width: 1px;
+  padding: 24px 32px 24px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 855px;
+  top: 1895px;
+  overflow: hidden;
+}
+
+.my__projects-button-text {
+  color: $text;
+  text-align: left;
+  font: var(--button-18-px, 700 18px/150% "Sen", sans-serif);
+  text-transform: uppercase;
+  position: relative;
+  a {
+    &:hover {
+      color: $pink_accent;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .my__projects-1-img {
+    margin-top: 550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .my__projects-1-text {
+    margin-top: 345px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .my__projects-2 {
+    width: 636px;
+    height: 830px;
+    position: absolute;
+    top: 364px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .my__projects-2-img {
+    margin-top: 1260px;
+  }
+
+  .my__projects-2-text {
+    margin-top: 1350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .my__projects-3-img {
+    top: 2350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .my__projects-3-text {
+    top: 2750px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .my__projects-4-img {
+    top: 3180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .my__projects-4-text {
+    top: 3590px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .my-projects__title {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .my-projects__subtitle {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .my__projects-button {
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3795px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my__projects-1-img {
+    margin-top: 550px;
+    width: 400px;
+    height: 420px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .my__projects-1-text {
+    margin-top: 250px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .my__projects-2-img {
+    margin-top: 1450px;
+    width: 400px;
+    height: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 0;
+  }
+
+  .my__projects-2-text {
+    margin-top: 1150px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .my__projects-3-img {
+    top: 2100px;
+    width: 400px;
+    height: 420px;
+    margin-right: 0;
+  }
+
+  .my__projects-3-text {
+    top: 2400px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .my__projects-4-img {
+    top: 2780px;
+    width: 400px;
+    height: 420px;
+    margin-right: 0;
+  }
+
+  .my__projects-4-text {
+    top: 3100px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .my__projects-button {
+    top: 3295px;
+    width: 300px;
+    text-align: center;
+    display: none;
+  }
+
+  .my__projects-text {
+    width: 370px;
+    margin-right: 0;
+  }
+
+  .my-projects__subtitle {
+    font-size: 24px;
+    width: 300px;
+    
+  }
+  .my-projects__title {
+    width: 300px;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .my__projects {
+    display: none !important;
+  }
+}

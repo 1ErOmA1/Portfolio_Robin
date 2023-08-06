@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+
+body{
+    font-family: $font-main;
+    background-color: $base;
+    color: $text;
+    font-size: 16px;
+}
+
+a{
+    color: $text;
+    transition: color 0.2s ease-in;
+}
+
+.container{
+    padding: 0 15px;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.container__big {
+    max-width: 1440px;
+    margin: 0 auto; 
+    position: relative;
+}
+
+.visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.none{
+    display: none !important;
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: $tablet) {
+
+}
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 576px) {
+
+}
+

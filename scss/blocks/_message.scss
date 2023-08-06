@@ -1,0 +1,169 @@
+.message {
+    max-width: 1076px;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 120px;
+    margin-bottom: 240px;
+}
+
+.message__container {
+    display: flex;
+    height: 100%;
+}
+
+.left-half__message {
+    flex: 1;
+}
+
+.right-half__message {
+    flex: 1;
+    position: relative;
+}
+
+.message__title {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.message__subtitle {
+    color: $light_grey;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.message__text {
+    margin-top: 24px;
+}
+
+.text__box {
+    margin-bottom: 8px;
+}
+
+.input-container {
+    position: relative;
+    width: 526px;
+    height: 50px;
+    background-color: $level1;
+}
+
+.input-field {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 22px;
+    outline: none;
+    color: $text;
+    padding-left: 15px;
+}
+
+.input-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.2s ease;
+}
+
+.input-container:focus-within::after {
+    width: 100%;
+}
+
+.box__email {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.input-container-large {
+    position: relative;
+    width: 526px;
+    height: 100px;
+    background-color: $level1;
+}
+
+.input-field-large {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 22px;
+    outline: none;
+    color: $text;
+    padding-left: 15px;
+    padding-top: 7px;
+    resize: none;
+}
+
+.input-container-large::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.2s ease;
+}
+
+.box__message{
+    margin-bottom: 40px;
+}
+
+.button__message{
+    width: 100%;
+    height: 75px;
+    background: $primary;
+    padding: 24px 32px 24px 32px;
+    overflow: hidden;
+    border: none;
+    color: $text;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    transition: all 0.2s ;
+    &:hover{
+        background: #7244de;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .message__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-half__message{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: $tablet) {
+
+}
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 576px) {
+    .input-container {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background-color: $level1;
+    }
+
+    .input-container-large{
+        width: 100%;
+    }
+}
+
+
+
+
